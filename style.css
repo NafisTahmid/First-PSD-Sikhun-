@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "CodeBold";
+    src: url("../Fonts/Code-Bold.woff");
+}
+
+@font-face {
+    font-family: "CodeLight";
+    src: url("../Fonts/Code-Light.woff");
+}
+
+body {
+    font-family: "Karla", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "CodeLight";
+    font-weight: normal;
+}
+
+.product-bg-1 {
+    background-image: url("../Images/lady-1.png");
+}
+.product-bg-2 {
+    background-image: url("../Images/lady-2.png");
+}
+.product-bg-3 {
+    background-image: url("../Images/lady-3.png");
+}
+.product-bg-4 {
+    background-image: url("../Images/lady-4.png");
+}
+.product-bg-5 {
+    background-image: url("../Images/lady-5.png");
+}
+.product-bg-6 {
+    background-image: url("../Images/lady-6.png");
+}
+.product-bg-7 {
+    background-image: url("../Images/lady-7.png");
+}
+.product-bg-8 {
+    background-image: url("../Images/lady-8.png");
+}
+.product-bg-9 {
+    background-image: url("../Images/lady-9.png");
+}
+.product-bg-10 {
+    background-image: url("../Images/lady-10.png");
+}
+.homepage-slider-wrap {
+    background-image: url("../Images/background.png");
+}
