@@ -286,6 +286,15 @@ html, body {
     text-align: right;
     padding-right: 10px;
     padding-top: 5px;
+    position: relative;
+}
+
+.single-product-item:hover .product-top-links{
+    z-index: 99;
+}
+
+.single-product-item:hover .product-top-links a {
+    color: #FFF;
 }
 
 .product-hover {
@@ -295,6 +304,8 @@ html, body {
     height: 100%;
     width: 100%;
     z-index:1;
+    opacity:0;
+    transition: 0.3s;
 }
 
 .product-hover::after {
@@ -307,6 +318,11 @@ html, body {
     background-color: #97c6d5;
     opacity: 0.7;
     z-index:-1;
+}
+
+.single-product-item:hover .product-top-links a {
+    color: #FFFFFF;
+    z-index:999;
 }
 
 .product-hover > a {
@@ -322,5 +338,205 @@ html, body {
     font-size: 16px;
     width: 90px;
     line-height: 25px;
+    margin-left: -45px;
+    margin-top: -70px;
+    transition: 0.3s;
 }
 
+.product-bottom-info {
+    position: absolute;
+    background-color: #FFF;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-transform: uppercase;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.product-bottom-info h4 {
+    margin: 0;
+    font-family: "karla",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+span.product-price {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    color: #eb6698;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    /* bottom: -3px; */
+}
+
+.product-color-box span {
+    border: 1px solid #d9d4da;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+.product-color-box span.product-color-red {
+    background-color: red;
+    border-color: red;
+}
+
+.product-color-box span.product-color-green {
+    background-color: #99e4e7;
+    border-color: #99e4e7;
+}
+
+.product-bottom-info p {
+    margin: 0;
+}
+
+.single-product-item:hover .product-hover {
+    opacity: 1;
+}
+
+.single-product-item:hover .product-hover > a {
+    margin-top:-40px;
+}
+
+.product-hover:hover .product-bottom-info {
+    opacity: 1;
+}
+
+.product-bottom-info span.color-sep {
+    position: absolute;
+    height: 52%;
+    width: 1px;
+    background-color: #908a91;
+}
+
+span.product-color-box {
+    padding-left: 5px;
+}
+
+a.load-more-product-btn {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #e84f88;
+    background-color: #f9f9f8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.product-promotion {
+    background-color: #f8f5f5;
+}
+
+.promo-bg {
+    background-color: #f4f0f0;
+}
+
+.promo-content {
+    padding: 60px 70px 50px 40px;
+    line-height: 2;
+}
+
+.promo-title {
+    position: relative;
+    color: #e84f88;
+    margin-bottom: 40px;
+}
+
+.promo-title h2 {
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+.promo-title h2 strong{ 
+    font-family: 'CodeBold';
+    font-weight: normal;
+}
+
+.promo-title span.year-text {
+    position: absolute;
+    left: 29%;
+    top: 13px;
+    font-size: 110px;
+    color: #d9e7ed;
+    line-height: 109px;
+    opacity: 0.2;
+}
+
+.boxed-btn {
+    text-decoration: none;
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #51abc8;
+    padding: 5px 30px;
+    margin-top: 6px;
+}
+
+.brand-images {
+    margin-top: 100px;
+}
+
+.footer-area {
+    background-color: #f4f4f4;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+.footer-area .footer-area a {
+    color: #919191;
+}
+
+.footer-menu li a {
+    color: #919191;
+    text-decoration: none;
+}
+
+.footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    /* display: inline-block; */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    padding-right: 38px;
+}
+
+.social-links a {
+    font-size: 120%;
+    display: inline-block;
+    padding-left: 10px;
+    color: #b2b2b2;
+}
+
+.social-links {
+    padding-left: 327px;
+    margin-bottom: 10px;
+    /* position: absolute; */
+    /* right: 0; */
+}
+
+.email-subscribe-form input[type="email"] {
+    border: 1px solid #DDD;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    min-width: 285px;
+}
+
+.email-subscribe-form input[type="submit"] {
+    background-color: #e84f88;
+    color: #FFFFFF;
+    padding: 11px 20px;
+    outline: none;
+    border: none;
+}
+
+.footer-menu {
+    margin-top: 10px;
+}
